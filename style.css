@@ -1,3 +1,37 @@
-h1{
-    color: red;
+@font-face{font-family:"MuseoSansCyrl";font-weight:400;src:url(http://bizweb.dktcdn.net/100/395/283/themes/776535/assets/museosanscyrl-500.otf?1638437438599) format("opentype")}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.7;
+    font-family: "MuseoSansCyrl", sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu .nav-item{
+    float: left;
+    margin-right: 15px;
+}
+
+.menu .nav-item a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.menu .nav-item .active{
+    
 }
