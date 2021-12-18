@@ -14,12 +14,25 @@ header{
     box-shadow: 0 3px 6px #efefef;
 }
 
+.hlhead{
+    width: 1170px;
+    text-align: right;
+    margin: auto;
+    font-size: 16px;
+}
+
+.hlhead a{
+    text-decoration: none;
+    color: red;
+}
+
 .container{
     width: 1170px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
 }
 
 .container a{
@@ -33,16 +46,96 @@ header{
 .menu .nav-item{
     float: left;
     margin-right: 15px;
+    /* line-height: 63px; */
+}
+
+.menu .nav-item:hover>ul{
+    display: block;
+}
+
+.menu .nav-item a:hover{
+    color: black;
+}
+
+.menu .nav-item a:hover>ul{
+    display: block;
+}
+
+.menu .nav-item>a::after{
+    content: '';
+    background: #000;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s;
+}
+
+.menu .nav-item:hover>a::after{
+    width: 100%;
 }
 
 .menu .nav-item a{
     text-decoration: none;
-    color: #000;
+    color: #404040;
     text-transform: uppercase;
+    padding: 26px 0;
+    position: relative;
 }
 
-.menu .nav-item .active{
-    
+.menu-lv2{
+    position: absolute;
+    display: none;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    list-style: none;
+    top: 98px;
+    min-width: 280px;
+}
+
+.menu-lv2 .nav-item-lv2{
+    border-bottom: 1px dashed #ddd;
+    position: relative;
+}
+
+.menu-lv2 .nav-item-lv2 a:hover{
+    background-color: gainsboro;
+}
+
+.menu-lv2 .nav-item-lv2 a{
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+}
+
+
+.menu-lv2 .nav-item-lv2 a i{ 
+    float: right;
+    line-height: 20px;
+    position: relative;
+}
+
+.menu-lv2 .nav-item-lv2:hover>ul{
+    display: block;
+}
+
+.menu-lv3{
+    position: absolute;
+    display: none;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    list-style: none;
+    top: 0px;
+    min-width: 280px;
+    left: calc(100% - 6px);
+}
+
+.menu-lv3 .nav-item-lv3{
+    border-bottom: 1px dashed #ddd;
+}
+
+.menu-lv3 .nav-item-lv3:hover{
+    background-color: gainsboro;
 }
 
 header .search{
@@ -55,7 +148,7 @@ header .search{
 header .search .search-bar{
     position: absolute;
     right: -2px;
-    top: 48px;
+    top: 59px;
     display: none;
     box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
     width: 260px;
@@ -94,5 +187,56 @@ header .search .search-bar{
     border-radius: 50%;
     padding: 8px 17px;
     border: 1px #ebebeb solid;
-    border-radius: 50%
+    border-radius: 50%;
+    position: relative;
+}
+
+.account a i{
+    color: #C6C3BD;;
+}
+
+.account ul{
+    position: absolute;
+    right: -104px;
+    top: 57px;
+    width: 150px;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    list-style: none;
+    display: none;
+    font-size: 16px;
+}
+
+.account ul li{
+    padding: 5px 10px;
+}
+
+.account ul li:nth-child(1){
+    border-bottom: 1px dashed #ddd;
+}
+
+.account ul li a{
+    text-decoration: none;
+    color: #404040;
+}
+
+.cart a{
+    text-decoration: none;
+    color: #404040;
+}
+
+.cart i{
+    font-size: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.cart .text{
+    float: left;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.cart .count{
+    font-size: 14px;
 }
