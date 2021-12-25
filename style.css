@@ -240,3 +240,158 @@ header .search .search-bar{
 .cart .count{
     font-size: 14px;
 }
+
+.banner .gallery-cell{
+  
+}
+
+/* .banner img{
+    width: 100%;
+}
+
+.banner .flickity-page-dots{
+    bottom: 20px !important;
+} */
+.gallery-cell {
+    width: 1356px;
+    margin-right: 10px;
+    /* background: #8C8; */
+    counter-increment: gallery-cell;
+}
+
+.gallery-cell img{
+    width: 100%;
+}
+
+.banner .flickity-page-dots{
+    bottom: 55px !important;
+} 
+
+.banner .flickity-prev-next-button{
+    display: none;
+}
+
+.new-arrival .title{
+    text-align: center;
+}
+
+.new-arrival a{
+    text-decoration: none;
+    color: #000;
+}
+
+.new-arrival a:hover{
+    color: #404040;
+}
+
+.new-arrival .list-item{
+    width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.new-arrival .list-item .item{
+    position: relative;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.new-arrival .list-item .item:hover a:nth-child(2){
+    opacity: 0.8;
+}
+
+.new-arrival .list-item .item:hover form{
+    transition: all 100ms;
+    bottom: 0px;
+}
+
+.new-arrival .list-item .item-sale{
+    z-index: 1;
+    position: absolute;
+    height: 35px;
+    width: 36px;
+    text-align: center;
+    top: 15px;
+    left: 15px;
+    background: url(https://bizweb.dktcdn.net/100/395/283/themes/776535/assets/sales.png?1640015779450) no-repeat;
+}
+
+.new-arrival .list-item .item-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.new-arrival .list-item .item img{
+    width: 100%;   
+}
+
+.new-arrival .list-item .item .item-image a:first-child{
+    padding-top: 30px;
+    height: 292px;
+    display: block;
+}
+.new-arrival .list-item .item a:nth-child(2){
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #7a7a7a;
+    opacity: 0;
+}
+
+.new-arrival .list-item .item a:nth-child(2):hover{
+    opacity: 1;
+}
+
+.new-arrival .list-item .item form:hover{
+    opacity: 1;
+}
+
+.new-arrival .item-text .item-name{
+    color: #404040;
+    font-size: 16px;
+}
+
+.new-arrival .item-text .item-name:hover{
+    color: #000;
+}
+
+.new-arrival .item-price span{
+    font-size: 18px;
+}
+
+.new-arrival .item-price span:first-child{
+    margin-right: 10px;
+}
+
+.new-arrival .item-price span:last-child{
+    color: #707070;
+    text-decoration: line-through;
+}
+
+.new-arrival form{
+    width: 100%;
+    background-color: #7a7a7a;
+    position: absolute;
+    bottom: -45px;
+    opacity: 0.8;
+    transition: all 200ms;
+}
+
+.new-arrival form button{
+    height: 45px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    transition: all 100ms;
+}
