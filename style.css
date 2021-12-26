@@ -97,6 +97,8 @@ header{
 .menu-lv2 .nav-item-lv2{
     border-bottom: 1px dashed #ddd;
     position: relative;
+    background: #FFF;
+    z-index: 1000;
 }
 
 .menu-lv2 .nav-item-lv2 a:hover{
